@@ -11,7 +11,7 @@ import React, { Component } from 'react';
 // Every class based component in React must have render() method defined!
 class SearchBar extends Component {
 	render() {
-		return <input />;
+		return <input onChange = {event => console.log(event.target.value)} />;
 	}
 }
 
