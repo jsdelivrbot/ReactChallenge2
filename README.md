@@ -1,25 +1,19 @@
-# ReduxSimpleStarter
+# ReactChallenge 2
+My Second React.js project 
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+# Objective
+- To be more familiar with React!
+- Broaden my knowledge within React field!
+- Explore and learn new skills
 
-###Getting Started###
+# Technology used
+* React JS 
+* Webpack 
+* Babel
+* Redux
+* YouTube V3 API
 
-There are two methods for getting started with this repo.
+# Project detail
+A simple one page app that allows user to search and browse YouTube video! 
 
-####Familiar with Git?#####
-Checkout this repo, install dependencies, then start the gulp process with the following:
 
-```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
-	> npm install
-	> npm start
-```
-
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-	> npm install
-	> npm start
-```
