@@ -8,8 +8,10 @@ import ReactDOM from 'react-dom';
 // Declare variable to store youtube API key
 const API_KEY = 'AIzaSyDcYnQtlPaUcMTEjrS-iosfKep06sGqX7s';
 
+
+
 // Create a simple component using ECMA6
-const App => {
+const App = () => {
 	return <div>Hello world</div>;
 }
 
