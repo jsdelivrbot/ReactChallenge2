@@ -4,15 +4,18 @@
 // ReactDOM is used to put the created components to the DOM!
 import React from 'react';
 import ReactDOM from 'react-dom';
+import SearchBar from './components/search_bar';
 
 // Declare variable to store youtube API key
 const API_KEY = 'AIzaSyDcYnQtlPaUcMTEjrS-iosfKep06sGqX7s';
 
-
-
 // Create a simple component using ECMA6
 const App = () => {
-	return <div>Hello world</div>;
+	return (
+		<div>
+			<SearchBar />
+		</div>
+	);
 }
 
 // Take the component and put it on the page (DOM), remember to use ReactDOM instead of React
