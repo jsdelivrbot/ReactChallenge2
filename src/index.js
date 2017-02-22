@@ -2,20 +2,35 @@
 // Otherwise React is going to return undefined
 // React module is used to create and manage components ONLY!
 // ReactDOM is used to put the created components to the DOM!
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import SearchBar from './components/search_bar';
+import YTSearch from 'youtube-api-search';
+import VideoList from './components/video_list';
 
 // Declare variable to store youtube API key
 const API_KEY = 'AIzaSyDcYnQtlPaUcMTEjrS-iosfKep06sGqX7s';
 
-// Create a simple component using ECMA6
-const App = () => {
-	return (
-		<div>
-			<SearchBar />
-		</div>
-	);
+class App extends Component {
+
+	constructor(props) {
+		super(props);
+
+		this.state = { videos : [] };
+
+		YTSearch({key: API_KEY, term: 'layphyu'}, (videos) => {
+			this.setState({ videos });
+		});
+	}
+
+	render(){
+		return (
+			<div>
+				<SearchBar />
+				<VideoList videos={this.state.videos} />
+			</div>
+		);
+	}
 }
 
 // Take the component and put it on the page (DOM), remember to use ReactDOM instead of React
