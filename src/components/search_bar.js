@@ -10,9 +10,22 @@ import React, { Component } from 'react';
 // Class based component is good for a component with lots of functionalities i.e events like when user input, hover, etc.
 // Every class based component in React must have render() method defined!
 class SearchBar extends Component {
-	render() {
-		return <input onChange = {event => console.log(event.target.value)} />;
+
+	constructor(props) {
+			super(props);
+			this.state = { term: '' };
 	}
+
+	render() {
+		return (
+			<div>
+				<input 
+				value = {this.state.term}
+				onChange = {event => this.setState({term: event.target.value})} />
+			</div>
+		);
+	}
+
 }
 
 export default SearchBar;
