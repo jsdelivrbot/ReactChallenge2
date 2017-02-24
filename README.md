@@ -14,6 +14,7 @@ My Second React.js project
 * AJAX
 * ES6
 * CSS (Bootstrap)
+* Loadash
 
 # Project detail
 A simple one page app that allows user to search and browse YouTube video! 
