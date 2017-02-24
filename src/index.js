@@ -2,6 +2,7 @@
 // Otherwise React is going to return undefined
 // React module is used to create and manage components ONLY!
 // ReactDOM is used to put the created components to the DOM!
+import _ from 'loadash';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import SearchBar from './components/search_bar';
