@@ -10,10 +10,9 @@ My Second React.js project
 * React JS 
 * Webpack 
 * Babel
-* Redux
 * YouTube V3 API
+* AJAX
+* CSS (Bootstrap)
 
 # Project detail
 A simple one page app that allows user to search and browse YouTube video! 
-
-
