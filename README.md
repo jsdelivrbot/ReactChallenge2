@@ -12,6 +12,7 @@ My Second React.js project
 * Babel
 * YouTube V3 API
 * AJAX
+* ES6
 * CSS (Bootstrap)
 
 # Project detail
